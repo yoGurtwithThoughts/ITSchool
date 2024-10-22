@@ -1,0 +1,47 @@
+body {
+    background-color: #0d0d0d; /* Темный фон */
+    color: #a0ffb7; /* Цвет текста */
+    font-family: 'Jura', sans-serif; /* Шрифт */
+}
+
+.container {
+    padding: 50px; /* Отступы контейнера */
+}
+
+.feature-row {
+    display: flex; /* Используем Flexbox для горизонтального выравнивания */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    margin-bottom: 30px; /* Отступ между рядами */
+}
+
+.feature-box {
+    display: flex; /* Flexbox для горизонтального выравнивания внутри каждой фичи */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    width: 30%; /* Ширина каждого элемента (можно регулировать) */
+    padding: 20px; /* Внутренние отступы */
+   
+}
+
+.feature-image {
+    width: 50px; /* Размер изображения */
+    margin-right: 20px; /* Отступ между изображением и текстом */
+}
+
+.feature-box i {
+    font-size: 50px; /* Размер иконки */
+    color: #00ff85; /* Цвет иконки */
+    margin-right: 20px; /* Отступ между иконкой и текстом */
+}
+
+.feature-box h5 {
+    font-size: 18px; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ снизу заголовка */
+    background: -webkit-linear-gradient(left, #00ffff, #00ff85); /* Градиентный текст */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-box p {
+    font-size: 14px; /* Размер текста параграфа */
+    color: #e0ffff; /* Цвет текста параграфа */
+}

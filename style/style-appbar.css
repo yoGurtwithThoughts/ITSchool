@@ -1,0 +1,47 @@
+body {
+    background-color: transparent;
+    
+}
+
+@font-face {
+    font-family: 'Mons';
+    src: url("../fonts/Montserrat.ttf") format("truetype"); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold; 
+    font-family: 'Mons';
+    background: linear-gradient(to right, #00ffff, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    color: #A3FFF8; 
+    font-size: 18px;
+    margin-right: 20px;
+    font-family: 'Mons';
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A3FFF8; }
+
+
+.navbar-nav .nav-link.active {
+    color: #66FCF1; 
+}
+
+.login-link {
+    color: #A3FFF8; 
+    font-size: 18px;
+}
+
+.login-link:hover {
+    color: #A3FFF8;  }
