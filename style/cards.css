@@ -1,68 +1,30 @@
 body {
-    background-color: #0d0d0d;
-    color: #ffffff;
-    font-family: 'Jura';
-    text-align: center;
-    padding: 50px;
+    background-color: #1b1b1b;
+    color: #a8ff60;
 }
-@font-face {
-    font-family: 'Jura';
-    src: url("../fonts/Jura.ttf") format("truetype"); 
-    font-weight: bold; 
-    font-style: normal;
-}
-.card {
-    background-color: #0d0d0d;
-    border: 2px solid;
-    border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-}
-.card::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 2px solid;
-    border-image: linear-gradient(45deg, #00ffff, #00ff00) 1;
+.course-card {
+    border: 2px solid #00ff95;
     border-radius: 15px;
-    z-index: -1;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
-.card h5 {
-    color: #00ff00;
+.course-card:hover {
+    transform: scale(1.05);
+    border-color: #00ffd1;
 }
-.card p {
-    color: #ffffff;
+.course-card h4 {
+    color: #00ffd1;
 }
 .btn-custom {
+    border: 1px solid #00ff95;
+    color: #00ff95;
     background-color: transparent;
-    border: 2px solid;
-    border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
-    color: #00ff00;
-    border-radius: 20px;
     padding: 10px 20px;
-    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 .btn-custom:hover {
-    background-color: #00ff00;
-    color: #0d0d0d;
-}
-.btn-main {
-    background-color: transparent;
-    border: 2px solid;
-    border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
-    color: #00ff00;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-.btn-main:hover {
-    background-color: #00ff00;
-    color: #0d0d0d;
+    background-color: #00ff95;
+    color: #1b1b1b;
 }
