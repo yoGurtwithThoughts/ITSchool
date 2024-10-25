@@ -33,3 +33,61 @@ p {
     height: 50vh;
     width: 50vh;
 }
+.card-custom {
+    border: 3px solid transparent; 
+    border-radius: 20px;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+
+   
+    border-image: linear-gradient(45deg, #5DE856, #66FCF1) 1;
+}
+
+.card-custom:hover {
+    transform: scale(1.05); 
+}
+
+.card-custom .icon {
+    width: 80px; 
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    background-color: #00ffcc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom:hover {
+    background-color: #00cc99;
+}
+
+.btn-large-custom {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-large-custom:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+}
