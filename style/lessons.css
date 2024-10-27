@@ -1,0 +1,82 @@
+.card-custom {
+    display: inline-block; /* Располагаем карточки в строку */
+    vertical-align: center;
+    padding: 85px; /* Добавляем отступы внутри карточки */
+    border-radius: 20px;
+    color: #ADFFF9;
+    position: relative;
+    height: 300px; /* Высота карточки */
+    width: 350px; /* Ширина карточки */
+    background: url('../images/backlesson.png') no-repeat center center; /* Фоновое изображение по центру */
+   background-size: cover;
+    overflow: hidden; /* Скрываем выступающие части псевдоэлемента */
+    margin: 45px; /* Добавляем отступы между карточками */
+    transition: transform 0.5s ease-in-out; 
+}
+
+.card-custom::before {
+    content: '';
+    position: relative;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 25px;
+    
+    z-index: -1;
+}
+
+.icon {
+    width: 60px;
+    align-items: center;
+}
+.card-custom:hover {
+    transform: scale(1.25); /* Увеличиваем размер карточки при наведении */
+}
+.badge-custom {
+    position: absolute;
+    top: 65px;
+    right: 55px;
+    text-align: right;
+    color: #ADFFF9;
+    font-size: 12px; /* Уменьшаем размер шрифта */
+    font-weight: bold;
+}
+
+.course-title {
+    font-size: 18px; /* Увеличиваем размер шрифта */
+    font-weight: bold;
+    color: #ADFFF9;
+    display: flex;
+    justify-content : space-between;
+    align-items: left;
+    margin-top: 15px;
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+icon-arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+.texts{
+    color: #66FCF1;
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 25px;
+    font-size: 22px;
+}
+.texts1{
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 25px;
+    font-family: 'Mons';
+    font-size: 20px;
+}
+@font-face {
+    font-family: 'Mons';
+    src: url("../fonts/Montserrat.ttf") format("truetype"); 
+    font-weight: bold; 
+    font-style: normal;
+}

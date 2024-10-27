@@ -10,6 +10,7 @@
     <link href="style/banner-style.css" rel="stylesheet"/>
     <link href="style/style-appbar.css" rel="stylesheet"/>
     <link href="style/low-banner.css" rel="stylesheet"/>
+    <link href="style/lessons.css" rel="stylesheet"/>
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -66,7 +67,7 @@
             color: #66FCF1;
             font-family: 'Jura';
             text-align: center;
-            padding: 50px;
+            padding: 5px;
             border-radius: 25px;
         }
         @font-face {
@@ -80,7 +81,7 @@
             border: 2px solid;
             border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
             border-radius: 45px;
-            margin: 20px;
+            margin: 55px;
             padding: 20px;
         }
         .card h5 {
@@ -153,8 +154,10 @@
     </div>
     <a href="#" class="btn btn-main">Открыть полный каталог</a>
     <h1 class="text">Почему именно мы?</h1>
-<div class="container">
+  
+<div class="container1">
     <div class="row">
+        <div style="height: 45px;"></div>
         <div class="col-md-4 mb-2 d-flex align-items-start">
             <div class="icon me-3">
                 <img src="images/precision_1iozxadqu2n2 1.svg" alt="icon" class="img-fluid">
@@ -216,44 +219,42 @@
 
 </body>
 <body>
-    <div class="row my-5">
-        <h2 class="text-center section-header">Начните обучение бесплатно</h2>
-        <p class="text-center subtitle" style="max-width: 600px; margin: 0 auto;">
-            Мы собрали для вас много бесплатных уроков,<br>
-            которые помогут вам начать изучение в сфере IT.
-        </p>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-3 mb-2">
-                    <div class="card-custom text-center">
-                        <img src="images/Cpp.svg" alt="C++ Icon" class="icon">
-                        <h4 class="text-center">Основы C++ для новичков</h4>
-                        <p class="text-muted">Бесплатный урок</p>
-                        <a href="#" class="btn btn-custom">Подробнее</a>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-2">
-                    <div class="card-custom text-center">
-                        <img src="images/Figma.svg" alt="Figma Icon" class="icon">
-                        <h4>Основы Figma</h4>
-                        <p class="text-muted">Бесплатный урок</p>
-                        <a href="#" class="btn btn-custom">Подробнее</a>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-2">
-                    <div class="card-custom text-center">
-                        <img src="images/JS.svg" alt="JavaScript Icon" class="icon">
-                        <h4>Основы JS для новичков</h4>
-                        <p class="text-muted">Бесплатный урок</p>
-                        <a href="#" class="btn btn-custom">Подробнее</a>
-                    </div>
-                </div>
+    <link href="style/lessons.css" rel="stylesheet"/>
+    <h1 class="texts">Начните обучение бесплатно</h1>
+    <h2 class="texts1">Мы собрали для вас много бесплатных уроков, которые помогут вам начать изучение в сфере IT.</h2>
+    <div class="row justify-content-center g-4"> <!-- Добавлен gap -->
+        <div class="col-md-3">
+            <div class="card-custom">
+                <span class="badge-custom">Бесплатный урок</span>
+                <img src="images/Cpp.svg" alt="C++ Icon" class="icon mx-auto d-block mt-3">
+                <h4 class="course-title mt-3">
+                    Основы C++ для новичков
+                    <a href="#"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
+                </h4>
             </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="#" class="btn btn-large-custom">Посмотреть полный список</a>
+        <div class="col-md-3">
+            <div class="card-custom">
+                <span class="badge-custom">Бесплатный урок</span>
+                <img src="images/figma.svg" alt="Figma Icon" class="icon mx-auto d-block mt-3">
+                <h4 class="course-title mt-3">
+                    Основы Figma
+                    <a href="#"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
+                </h4>
+            </div>
         </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-md-3">
+            <div class="card-custom">
+                <span class="badge-custom text-rihgt">Бесплатный урок</span>
+                <img src="images/js.svg" alt="JavaScript Icon" class="icon mx-auto d-block mt-3">
+                <h4 class="course-title mt-3">
+                    Основы JS для новичков
+                    <a href="#"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
 </body>
    </html>  
