@@ -48,9 +48,10 @@
     font-weight: bold;
     color: #ADFFF9;
     display: flex;
-    justify-content : space-between;
+    justify-content: space-between;
     align-items: left;
     margin-top: 15px;
+    margin-left: 5px;
     text-align: left; /* Выравниваем текст по левому краю */
 }
 
