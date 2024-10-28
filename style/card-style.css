@@ -1,0 +1,264 @@
+.body-st {
+    background-image: url(../images/Фон.png); /* Убедитесь, что путь к изображению правильный */
+    background-size: cover; /* Используйте cover, чтобы фон заполнил весь экран */
+    background-position: center; /* Центрируйте изображение */
+    background-repeat: no-repeat; /* Не повторяйте изображение */
+    color: #ffffff; /* Цвет текста по умолчанию */
+    font-family: 'Jura', sans-serif; /* Пользовательский шрифт */
+}
+
+        /* Navbar styles */
+        .navbar-custom {
+            justify-content: center;
+            padding: 10px 0;
+            background-color: transparent; 
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 20px; /* Space between menu items */
+            position: relative;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            color: #ffffff;
+            transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+        }
+
+        .nav-link.active {
+            color: #00cc66; /* Highlight color for active link */
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #00cc66; /* Color on hover */
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        .nav-item::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #00cc66; /* Underline color */
+            transition: width 0.3s;
+        }
+
+        .nav-item:hover::after,
+        .nav-link.active::after {
+            width: 100%; /* Underline effect on hover or active */
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: #ADFFF9;
+            border: none;
+            color: #001a1a;
+        }
+
+        .btn-primary:hover {
+            background-color: #ADFFF9;
+        }
+
+        /* Pagination styles */
+        .pagination {
+            justify-content: center;
+        }
+
+        .pagination .page-link {
+            color: #ADFFF9;
+            background-color: transparent;
+        }
+
+        .pagination .page-link:hover {
+            background-color: lightgray;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #ADFFF9;
+            color: #001a1a;
+        }
+
+    
+
+        .btn {
+            background-color: transparent;
+            border: 2px solid #00ff99;
+            color: #00ff99;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: #00ff99;
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center; /* Центрирование элементов по вертикали */
+            margin-bottom: 10px;
+        }
+        
+        .form-check-input {
+            position: absolute;
+            margin-top: 0; /* Удаляем отступ сверху */
+            opacity: 0; /* Скрываем оригинальный чекбокс */
+            cursor: pointer; /* Курсор при наведении */
+        }
+        
+        .form-check-label {
+            position: relative;
+            padding-left: 30px; /* Отступ для галочки */
+            cursor: pointer; /* Курсор при наведении */
+            user-select: none; /* Отключаем выделение текста */
+            line-height: 20px; /* Высота строки для выравнивания текста */
+        }
+        
+        .form-check-label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0px; /* Высота галочки */
+            width: 20px;
+            height: 20px;
+            border: 2px solid #00ff99; /* Цвет границы */
+            border-radius: 4px; /* Скругление углов */
+            background: transparent; /* Прозрачный фон */
+            transition: background 0.3s;
+        }
+        
+        .form-check-input:checked + .form-check-label::before {
+            background: transparent; /* Градиент на галочке */
+        }
+        
+        .form-check-input:checked + .form-check-label::after {
+            content: '✔'; /* Символ галочки */
+            position: absolute;
+            left: 3px; /* Смещение для галочки */
+            top: -3px; /* Смещение по вертикали */
+            color: white; /* Цвет галочки */
+            font-size: 16px; /* Размер галочки */
+        }
+        
+        .range-slider {
+            position: relative;
+            width: 100%;
+            font-size: 15px;
+            margin-top: 30px;
+            max-width: 700px; /* Ограничиваем ширину */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .range-slider input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 2.5px; /* Тонкая линия */
+            background: linear-gradient(90deg, #33ff99, #00ccff);
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        .range-slider input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px; /* Квадратный маркер */
+            height: 14px;
+            background-color: #33ff99;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        
+        .range-slider input[type="range"]::-moz-range-thumb {
+            width: 14px; /* Квадратный маркер */
+            height: 14px;
+            background-color: #33ff99;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        
+        /* Font face declaration */
+        @font-face {
+            font-family: 'Jura';
+            src: url("../fonts/Jura.ttf") format("truetype");
+            font-weight: bold; 
+            font-style: normal;
+        }
+        .card-container {
+            display: flex;
+            
+            align-items: center;
+        }
+        
+      
+        
+        .cards {
+            margin-top: 30px;
+            background-image: url(../images/Карта\ 2.svg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            color: #ADFFF9;
+            width: 400px; /* Ширина карточки */
+            height: 505px; /* Высота карточки */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Горизонтальное центрирование */
+            justify-content: center; /* Вертикальное центрирование */
+            text-align: center;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        
+        .cards:hover {
+            transform: scale(1.05);
+        }
+        
+        .card img { 
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .card-titles {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .card-texts {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .btns {
+            border: 2px solid;
+            border-image: linear-gradient(to right, #5DE856, #66FCF1CC) 1;
+            color: white;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btns:hover {
+            color: #000;
+        }
+        
+        .gear-icon {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+        }
