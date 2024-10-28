@@ -194,7 +194,7 @@
         }
         .card-container {
             display: flex;
-            
+            background-image: url(../images/Карта\ 1.svg);
             align-items: center;
         }
         
