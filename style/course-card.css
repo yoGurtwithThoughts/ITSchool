@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.course-cards, .lesson-list {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+.course-cards img, .illustration img, .lesson-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.course-info h2, .lesson-list h3 {
+    color: #ADFFF9; /* Цвет заголовка */
+}
+.course-info p, .lesson-list p {
+    color: #FFFF;
+}
+.highlight {
+    color: #00ff99;
+}
+.price-button {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Отступ между ценой и кнопкой */
+}
+.price-button {
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Центруем по вертикали */
+    gap: 10px; /* Отступ между ценой и кнопкой */
+}
+
+.price {
+    font-size: 24px;
+    color: #00ff99;
+    margin: 0; /* Убираем стандартные отступы */
+}
+
+.btns {
+    border: 2px solid;
+    border-image: linear-gradient(to right, #5DE856, #66FCF1CC) 1;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.lesson-list h3 {
+    margin-bottom: 10px;
+}
+.lesson-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.lesson-text {
+    color: #FFFF;
+}
+.course-info h2 {
+    color: #ADFFF9; /* Цвет заголовка для курса */
+}
+
+.lesson-list h3 {
+    color: #ADFFF9; /* Новый цвет заголовка для списка уроков */
+    margin-bottom: 10px;
+}
+
+.course-info p, .lesson-list p {
+    color: #FFFF; /* Цвет текста для описания */
+}
+
+.highlight {
+    color: #ADFFF9; /* Цвет выделенного текста */
+}
