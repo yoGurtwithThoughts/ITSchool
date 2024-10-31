@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Mons';
+    src: url("../fonts/Montserrat.ttf") format("truetype"); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url("../fonts/Jura.ttf") format("truetype"); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.navbar-custom {
+    justify-content: center;
+    padding: 10px 0;
+    background-color: transparent; 
+}
+
+.navbar-nav .nav-item {
+    margin: 0 20px; /* Space between menu items */
+    position: relative;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-link.active {
+    color: #00cc66; /* Highlight color for active link */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #00cc66; /* Color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00cc66; /* Underline color */
+    transition: width 0.3s;
+}
+
+.nav-item:hover::after,
+.nav-link.active::after {
+    width: 100%; /* Underline effect on hover or active */
+}
+
+.body-st1 {
+    background:url(../images/back1.png);
+    background-position: fill; /* Центрируйте изображение */
+   background-size: cover;
+    color: #ADFFF9; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-strart; /* Выровнять элементы по правому краю */
+    justify-content: space-between; /* Распределить элементы вертикально */
+    padding-top: 20px;
+    min-height: 100vh; /* Задать высоту для растяжения на весь экран */
+    padding-right: 20px; 
+}
+
+
+.custom-cardd  {
+    color:  #FFFF;
+    font-family: 'Mons'; 
+    margin-top: 20px;
+}
+
+/* Стили для заголовка карточки */
+.custom-cardd h5 {
+    font-family: 'Jura';
+    color: #ADFFF9;
+    font-size: 1.5em; /* Размер шрифта */
+    margin-top: 15px; 
+}
+
+/* Стили для текста карточки */
+.custom-cardd p {
+    font-family: 'Mons';
+    font-size: 1em; /* Размер шрифта */
+    margin-top: 15px; 
+    line-height: 1.5; /* Высота строки */
+}
+/* Прозрачные карточки с градиентной границей */
+.custom-cardd {
+    background-color: #000; /* Черный фон для карточки */
+    border-radius: 15px; /* Скругление */
+    padding: 20px; 
+    color: #ADFFF9; 
+    margin-bottom: 30px;
+    margin-bottom: 20px; 
+    display: flex;
+    text-align: left; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 100%; 
+    position: relative; /* Позиционирование для градиентной границы */
+}
+
+/* Градиентная граница для карточки */
+.custom-cardd::before {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: -5px; 
+    right: -5px; 
+    bottom: -5px; 
+    border-radius: 15px; /* Скругление */
+    background: linear-gradient(135deg, rgba(93, 232, 86, 1), rgba(102, 252, 241, 1)); /* Градиентная граница */
+    z-index: -1; /* На заднем плане */
+}
+
+/* Кнопка с изображением в качестве границы */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #ADFFF9;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Основная кнопка */
+.btn-gradient-border {
+    display: flex;
+    padding: 3px; /* Расстояние между кнопкой и градиентом */
+    border-radius: 15px;
+    background: linear-gradient(135deg, #5DE856, #66FCF1); /* Градиентная граница */
+}
+.section-title{
+    text-align: center;
+    justify-content: center;
+}
+/* Основная кнопка */
+.btn-custom {
+    background-color: #000; /* Черный фон кнопки */
+    color: #ADFFF9;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+    width: 250px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
