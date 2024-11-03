@@ -1,0 +1,110 @@
+.body-st {
+    background-image: url(../images/back4.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Jura', sans-serif; 
+}
+.date {
+    color: #a0a0a0;
+    margin-top: 20px;
+    font-family: 'Mons';
+    margin-left: 55px;
+}
+.title {
+    color: #ADFFF9;
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: 'Jura';
+    margin-left: 55px;
+}
+.title {
+    color: #ADFFF9;
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: 'Jura';
+    margin-left: 55px;
+    
+}
+.subtitle {
+    color: #FFF;
+    font-size: 22px;
+    margin-top: 35px;
+    font-family: 'Mons';
+    margin-left: 55px;
+}
+.section-title {
+    color: #ADFFF9;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    font-family: 'Jura';
+    margin-left: 45px;
+}
+.section-title1 {
+    color: #ADFFF9;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    font-family: 'Jura';
+    margin-right: 55px;
+    text-align: right;
+}
+.section-content {
+    margin-top: 35px;
+    margin-left: 55px;
+    font-family: 'Mons';
+    font-size: 22px;
+}
+.section-content1 {
+    margin-top: 35px;
+    margin-right: 55px;
+    font-family: 'Mons';
+    font-size: 22px;
+    text-align: right;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+.image-container img {
+    width: 450px; 
+    height: 450px; 
+    margin: 25px 10px;
+    transform: translateY(20px); 
+    opacity: 0; 
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+}
+
+.image-container img.show {
+    opacity: 1; 
+    transform: translateY(0);
+}
+@font-face {
+    font-family: 'Mons';
+    src: url("../fonts/Montserrat.ttf") format("truetype"); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url("../fonts/Jura.ttf") format("truetype"); 
+    font-weight: bold; 
+    font-style: normal;
+}
+.date, .title, .subtitle, .section-title, .section-content, .section-content1  {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.4s ease, transform 0.4s ease; 
+}
+
+.show {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.c1 {
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
