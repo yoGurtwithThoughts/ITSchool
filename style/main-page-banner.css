@@ -1,0 +1,111 @@
+body {
+    background-color: transparent;
+    color: #66FCF1;
+    font-family: 'Jura';
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url("../fonts/Jura.ttf") format("truetype");
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.card {
+    background-color: transparent;
+    border-width: 4px; /* Толстая граница */
+    height: 300px;
+    width: 500px;
+    border-style: solid;
+    border-image-source: url("../images/Карточка 1.svg");
+    border-image-slice: 20;
+    border-image-width: 4; /* Увеличенная толщина границы */
+    border-image-repeat: round;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card h5 {
+    color: #ADFFF9;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #66FCF1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border-width: 3px; /* Толстая граница */
+    border-style: solid;
+    border-image-source: url("../images/Кнопка.png");
+    border-image-slice: 20;
+    border-image-width: 3; /* Увеличенная толщина границы */
+    border-image-repeat: round;
+    color: #ADFFF9;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+ .btn-main1 {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border-width: 3px; /* Толстая граница */
+    border-style: solid;
+    border-image-source: url("../images/Кнопка.png");
+    border-image-slice: 20;
+    border-image-width: 3; /* Увеличенная толщина границы */
+    border-image-repeat: round;
+    color: #ADFFF9;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    margin-left: 48px;
+    align-items: center;
+    font-size: 16px;
+}
+.btn-main {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border-width: 3px; /* Толстая граница */
+    border-style: solid;
+    border-image-source: url("../images/Кнопка.png");
+    border-image-slice: 20;
+    border-image-width: 3; /* Увеличенная толщина границы */
+    border-image-repeat: round;
+    color: #ADFFF9;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 20px auto; /* Центрирование кнопки */
+}
+
+
+.btn-custom:hover,.btn-main1:hover, .btn-main:hover{
+    background: linear-gradient(45deg, #00ff00, #00ffff);
+    color: #0d0d0d;
+    border-radius:0px;
+    border-image-width: 4;
+    overflow: hidden;
+}

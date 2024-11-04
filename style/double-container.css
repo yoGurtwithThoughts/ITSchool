@@ -24,12 +24,12 @@ body1 {
 .container2 {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
-    top: 150px; /* Moves the container down */
+    top: 95px; /* Moves the container down */
 }
 
 .form-container {

@@ -11,6 +11,8 @@
     <link href="style/style-appbar.css" rel="stylesheet"/>
     <link href="style/low-banner.css" rel="stylesheet"/>
     <link href="style/lessons.css" rel="stylesheet"/>
+    <link href="style/main-page-banner.css" rel="stylesheet"/>
+    <link href="style/style-footer.css" rel="stylesheet"/>
 <body >
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -49,10 +51,12 @@
          <h1>
           Познавай IT-мир вместе с нами
          </h1>
+         <div class="p1">
          <p>
           Мы дарим новые знания не только новичкам, но и профессионалам!
          </p>
-         <a class="btn btn-custom" href="#">
+         </div>
+         <a class="btn btn-main1" href="pages/course-page.html">
           Перейти к курсам
          </a>
         </div>
@@ -61,63 +65,7 @@
          src="images/Иллюстрация.png" width="600"/>
         </div>
        </div>
-       <style>
-        body {
-            background-color: transparent;
-            color: #66FCF1;
-            font-family: 'Jura';
-            text-align: center;
-            padding: 5px;
-            border-radius: 25px;
-        }
-        @font-face {
-    font-family: 'Jura';
-    src: url("../fonts/Jura.ttf") format("truetype"); 
-    font-weight: bold; 
-    font-style: normal;
-}
-        .card {
-            background-color: transparent;
-            border: 2px solid;
-            border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
-            border-radius: 45px;
-            margin: 55px;
-            padding: 20px;
-        }
-        .card h5 {
-            color: #ADFFF9;
-        }
-        .card p {
-            color: #66FCF1;
-        }
-        .btn-custom {
-            background-color: transparent;
-            border: 0,25px solid;
-            border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
-            color: #ADFFF9;
-            border-radius: 45px;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        .btn-custom:hover {
-            background-color: transparent;
-            color: #0d0d0d;
-        }
-        .btn-main {
-            background-color: transparent;
-            border: 0,25px solid;
-            border-image: linear-gradient(45deg, #00ff00, #00ffff) 1;
-            color: #ADFFF9;
-            border-radius: 45px;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-        .btn-main:hover {
-            background-color: transparent;
-            color: #0d0d0d;
-        }
-    </style>
+      
 </head>
     <h2>Направления для обучения</h2>
     <div class="container">
@@ -126,14 +74,14 @@
                 <div class="card">
                     <h5>Программирование</h5>
                     <p>JS, C#, C++, PHP, 1C и другие.</p>
-                    <a href="#" class="btn btn-custom">Перейти к курсам</a>
+                    <a href="pages/course-page.html" class="btn btn-custom">Перейти к курсам</a>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
                     <h5>Обучение UI/UX</h5>
                     <p>Веб-дизайн, графический дизайн и другие.</p>
-                    <a href="#" class="btn btn-custom">Перейти к курсам</a>
+                    <a href="pages/course-page.html" class="btn btn-custom">Перейти к курсам</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -147,12 +95,12 @@
                 <div class="card">
                     <h5>Курсы для ПРОФИ</h5>
                     <p>Веб-дизайн, графический дизайн и другие.</p>
-                    <a href="#" class="btn btn-custom">Перейти к курсам</a>
+                    <a href="pages/course-page.html" class="btn btn-custom">Перейти к курсам</a>
                 </div>
             </div>
         </div>
     </div>
-    <a href="#" class="btn btn-main">Открыть полный каталог</a>
+    <a href="pages/course-page.html"  class="btn btn-main">Открыть полный каталог</a>
     <h1 class="text">Почему именно мы?</h1>
   
 <div class="container1">
@@ -163,7 +111,8 @@
                 <img src="images/precision_1iozxadqu2n2 1.svg" alt="icon" class="img-fluid">
             </div>
             <div>
-                <h4>Всё по факту</h4>
+                
+                <h4 class="custom-title">Всё по факту</h4>
                 <p>Мы не льём воду, а даём только нужные знания по теме урока.</p>
             </div>
         </div>
@@ -172,7 +121,7 @@
                 <img src="images/feedback_dpxnthh55ce1 1 (1).svg" alt="icon" class="img-fluid">
             </div>
             <div>
-                <h4>Обратная связь</h4>
+                <h4 class="custom-title">Обратная связь</h4>
                 <p>Мы не льём воду, а  даём только нужные знания по теме урока.</p>
             </div>
         </div>
@@ -182,7 +131,7 @@
                 <img src="images/best.svg" alt="icon" class="img-fluid">
             </div>
             <div>
-                <h4>Опытные преподаватели</h4>
+                <h4 class="custom-title">Опытные преподаватели</h4>
                 <p>Все будут обучать только опытные специалисты своей сферы.</p>
             </div>
         </div>
@@ -192,7 +141,7 @@
                 <img src="images/programming_3gboh5vssv79 1.svg" alt="icon" class="img-fluid">
             </div>
             <div>
-                <h4>Много практики</h4>
+                <h4 class="custom-title">Много практики</h4>
                 <p>Для обучения мы используем реальные методики и практические кейсы.</p>
             </div>
         </div>
@@ -201,7 +150,7 @@
                 <img src="images/Работа.svg" alt="icon" class="img-fluid">
             </div>
             <div>
-                <h4>Трудоустройство</h4>
+                <h4 class="custom-title">Трудоустройство</h4>
                 <p>После обучения помогаем найти работу и трудоустроиться.</p>
             </div>
         </div>
@@ -210,7 +159,7 @@
                 <img src="images/Чат (1).svg" alt="icon" class="img-fluid">
             </div>
             <div>
-                <h4>Общий чат для учеников</h4>
+                <h4 class="custom-title">Общий чат для учеников</h4>
                 <p>Вы всегда можете задать вопрос и получить помощь в общем чате.</p>
             </div>
         </div>
@@ -229,7 +178,7 @@
                 <img src="images/Cpp.svg" alt="C++ Icon" class="icon mx-auto d-block mt-3">
                 <h4 class="course-title mt-3">
                     Основы C++ для новичков
-                    <a href="#"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
+                    <a href="../pages/course-page.html"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
                 </h4>
             </div>
         </div>
@@ -239,7 +188,7 @@
                 <img src="images/figma.svg" alt="Figma Icon" class="icon mx-auto d-block mt-3">
                 <h4 class="course-title mt-3">
                     Основы Figma
-                    <a href="#"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
+                    <a href="pages/course-page.html"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
                 </h4>
             </div>
         </div>
@@ -249,14 +198,14 @@
                 <img src="images/js.svg" alt="JavaScript Icon" class="icon mx-auto d-block mt-3">
                 <h4 class="course-title mt-3">
                     Основы JS для новичков
-                    <a href="#"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
+                    <a href="pages/course-page.html"><img src="images/Arrow 1.svg" class="icon-arrow" alt="Arrow" /></a>
                 </h4>
             </div>
         </div>
     </div>
 </div>
     </div>
-    <a href="#" class="btn btn-custom">Посмотреть полный список</a>
+    <a href="pages/course-page.html" class="btn btn-main">Посмотреть полный список</a>
     
         <link href="style/double-container.css" rel="stylesheet"/>
         <body class="body1">
@@ -281,6 +230,101 @@
                 </div>
                 <div class="border-container"></div>
             </div>
-</body>
-</body>
-   </html>  
+    </body>
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-md-3">
+               <div class="logo">
+                <img alt="IT-School logo" height="35" src="images/Vector.png" width="65"/>
+                <h3>
+                 IT-School
+                </h3>
+               </div>
+               <p>
+                Наши соц.сети:
+               </p>
+               <div class="social-icons">
+                <a href="#">
+                 <i class="fab fa-vk">
+                    <img alt="vk" height="50" src="images/vk.svg" width="35"/>
+                 </i>
+                </a>
+                <a href="#">
+                 <i class="fab fa-telegram-plane">
+                    <img alt="tg" height="50" src="images/tg.svg" width="35"/>
+                 </i>
+                </a>
+                <a href="#">
+                 <i class="fab fa-youtube">
+                    <img alt="youtube" height="50" src="images/yt.svg" width="35"/>
+                 </i>
+                </a>
+                <a href="#">
+                 <i class="fab fa-tiktok">
+                    <img alt="tt" height="50" src="images/tick-tok.svg" width="25"/>
+                 </i>
+                </a>
+               </div>
+              </div>
+              <div class="col-md-3">
+               <h4 class="section-title">
+                Информация
+               </h4>
+               <p>
+                Наши курсы
+               </p>
+               <p>
+                Статьи
+               </p>
+               <p>
+                Отзывы
+               </p>
+              </div>
+              <div class="col-md-3">
+               <h4 class="section-title">
+                Поддержка
+               </h4>
+               <p>
+                @it-school
+               </p>
+               <p>
+                support@itschool.ru
+               </p>
+              </div>
+              <div class="col-md-3">
+               <div class="newsletter">
+                <h4 class="section-title">
+                 Новостная рассылка
+                </h4>
+                <p>
+                 Узнавайте первым о новых курсах и статьях
+                </p>
+                <div class="d-flex">
+                 <input placeholder="E-mail" type="email"/>
+                 <button type="submit">
+                  <i class="fas fa-arrow-right">
+                  </i>
+                 </button>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="row mt-4">
+              <div class="col-md-12 text-center">
+               <p>
+                Политика конфиденциальности  Публичная оферта
+               </p>
+               <p>
+                «IT-School» © Все права защищены  2024
+               </p>
+               <p>
+                ИП Грачёв Кирилл ИНН 123456789012  ОГРН 123456789101213 Государственная лицензия на образование № Л123-45678-90/12345678
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+    </footer>
+</html>

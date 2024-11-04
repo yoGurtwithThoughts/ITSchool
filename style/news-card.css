@@ -47,26 +47,26 @@
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #00cc66; /* Underline color */
+    background-color: #00cc66; 
     transition: width 0.3s;
 }
 
 .nav-item:hover::after,
 .nav-link.active::after {
-    width: 100%; /* Underline effect on hover or active */
+    width: 100%; 
 }
 
 .body-st1 {
     background:url(../images/back1.png);
-    background-position: fill; /* Центрируйте изображение */
+    background-position: fill; 
    background-size: cover;
     color: #ADFFF9; 
     display: flex;
     flex-direction: column;
-    align-items: flex-strart; /* Выровнять элементы по правому краю */
-    justify-content: space-between; /* Распределить элементы вертикально */
+    align-items: flex-strart; 
+    justify-content: space-between; 
     padding-top: 20px;
-    min-height: 100vh; /* Задать высоту для растяжения на весь экран */
+    min-height: 100vh;
     padding-right: 20px; 
 }
 
@@ -77,25 +77,25 @@
     margin-top: 20px;
 }
 
-/* Стили для заголовка карточки */
+
 .custom-cardd h5 {
     font-family: 'Jura';
     color: #ADFFF9;
-    font-size: 1.5em; /* Размер шрифта */
+    font-size: 1.5em; 
     margin-top: 15px; 
 }
 
-/* Стили для текста карточки */
+
 .custom-cardd p {
     font-family: 'Mons';
-    font-size: 1em; /* Размер шрифта */
+    font-size: 1em; 
     margin-top: 15px; 
-    line-height: 1.5; /* Высота строки */
+    line-height: 1.5;
 }
-/* Прозрачные карточки с градиентной границей */
+
 .custom-cardd {
-    background-color: #000; /* Черный фон для карточки */
-    border-radius: 15px; /* Скругление */
+    background-color: #000; 
+    border-radius: 15px; 
     padding: 20px; 
     color: #ADFFF9; 
     margin-bottom: 30px;
@@ -105,10 +105,9 @@
     flex-direction: column; 
     justify-content: space-between; 
     width: 100%; 
-    position: relative; /* Позиционирование для градиентной границы */
+    position: relative; 
 }
 
-/* Градиентная граница для карточки */
 .custom-cardd::before {
     content: '';
     position: absolute;
@@ -116,12 +115,12 @@
     left: -5px; 
     right: -5px; 
     bottom: -5px; 
-    border-radius: 15px; /* Скругление */
-    background: linear-gradient(135deg, rgba(93, 232, 86, 1), rgba(102, 252, 241, 1)); /* Градиентная граница */
-    z-index: -1; /* На заднем плане */
+    border-radius: 15px; 
+    background: linear-gradient(135deg, rgba(93, 232, 86, 1), rgba(102, 252, 241, 1)); 
+    z-index: -1; 
 }
 
-/* Кнопка с изображением в качестве границы */
+
 .footer-row {
     display: flex;
     justify-content: space-between;
@@ -144,17 +143,17 @@
 /* Основная кнопка */
 .btn-gradient-border {
     display: flex;
-    padding: 3px; /* Расстояние между кнопкой и градиентом */
+    padding: 3px; 
     border-radius: 15px;
-    background: linear-gradient(135deg, #5DE856, #66FCF1); /* Градиентная граница */
+    background: linear-gradient(135deg, #5DE856, #66FCF1); 
 }
 .section-title{
     text-align: center;
     justify-content: center;
 }
-/* Основная кнопка */
+
 .btn-custom {
-    background-color: #000; /* Черный фон кнопки */
+    background-color: #000; 
     color: #ADFFF9;
     font-weight: bold;
     border: none;
